@@ -1,0 +1,20 @@
+server:
+  port: 9000
+
+# Thread Pool
+thread:
+  core-pool-size: 5
+  max-pool-size: 10
+  queue-capacity: 40
+  name-prefix: Executor-
+
+# RTSP URL? "," ? ??? RTSP ?? ??? -> url
+# start - end time?  hhmm ???? ??
+recording:
+  enabled: true
+  video-directory: Z:\Data\Recording-RTSP
+  url: rtsp://192.168.0.15:554/CA01, rtsp://192.168.0.15:554/CA02
+  start-time-1: 1600
+  end-time-1: 2000
+  start-time-2:
+  end-time-2:
