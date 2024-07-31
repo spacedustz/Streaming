@@ -224,7 +224,7 @@ public class RtspRecordScheduler {
             try {  
                 if (process.isAlive()) {  
                     // Windows 환경에서는 taskkill 명령을 사용하여 SIGINT를 전송, SIGKILL을 할 경우 영상 재생이 안됨  
-                    Runtime.getRuntime().exec("taskkill /f /pid " + process.pid() + " /t");  
+                    Runtime.getRuntime().exec("taskkill /f /im ffmpeg.exe /t");  
                     process.waitFor();  
                 }  
             } catch (Exception e) {  
